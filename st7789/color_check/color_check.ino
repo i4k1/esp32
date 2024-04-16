@@ -1,4 +1,4 @@
-// 15-04-2024 by i4k
+// 16-04-2024 by i4k
 // simple program that use st7789 display and check colors
 
 #include <TFT_eSPI.h>
@@ -9,12 +9,7 @@ void setup() {
     Serial.begin(115200);
     tft.begin();
     tft.setRotation(3);
-
-    tft.fillScreen(TFT_BLACK);
-    tft.setCursor(0, 0);
-    tft.setTextColor(TFT_WHITE, TFT_BLACK);
     tft.setTextSize(3);
-    delay(1000);
 }
 
 void loop() {
